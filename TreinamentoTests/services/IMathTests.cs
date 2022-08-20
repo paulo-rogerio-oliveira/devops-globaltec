@@ -51,7 +51,7 @@ namespace TreinamentoTests.services
             Assert.AreEqual(arg8, result[3]);
         }
 
-        [DataRow(0, 0, 0, 0, DisplayName = "Somente com zeros")]
+        [DataRow(0, DisplayName = "Somente com zeros")]
         [ExpectedException(typeof(ArgumentException))]
         [TestMethod]
         public void QuandoInsereValoresInválidos(int arg1, int arg2, int arg3, int arg4)
