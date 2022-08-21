@@ -35,7 +35,7 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'paulo-rogerio-oliveira_main'
     projectName: 'main'
-
+- task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
