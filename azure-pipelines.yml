@@ -28,6 +28,17 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'Sonar'
+    organization: 'paulo-rogerio-oliveira'
+    scannerMode: 'MSBuild'
+    projectKey: 'paulo-rogerio-oliveira_main'
+    projectName: 'main'
+
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
 - task: VSTest@2
   inputs:
     testSelector: 'testAssemblies'
