@@ -32,7 +32,7 @@ namespace TreinamentoTests.services
             return null;
         }
 
-        [DataRow(1,3,5,7, false, false, false, false, DisplayName = "Somente numeros impáres")]
+        [DataRow(1,3,5,7, false, false, false, false, DisplayName = "Somente numeros ímpares")]
         [DataRow(2,4, 6, 8, true, true, true, true, DisplayName = "Somente numeros pares")]
         [DataRow(1, 4, 7, 9, false, true, false, false, DisplayName = "Impáres e pares")]
         [TestMethod]
